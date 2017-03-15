@@ -49,11 +49,12 @@ WebApps With Docker
 	1. How to get multiple containers communicate with one another.
 	2. By Using container linking, environment variables, little config sugar.	
 3. docker machine - spin dev and test machines from command line. run machines with virtual box. eval $(docker-machine env MACHINE_NAME)
-4.  
+4.  docker swarm - In enterprise, we need many many docker containers. setting up individually is very difficult which is solved by docker swarm. Docker swarm ability to deploy complex multi container apps in one go.
+
 
 References:
 1. https://www.youtube.com/watch?v=UV3cw4QLJLs
 2. https://www.youtube.com/watch?v=OzfmRMNBwlE
 3. Best Practices for writing Dockerfiles - https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
 4. Diff between RUN vs CMD vs Entrypoint - http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
-
+5. Docker swarm - https://www.youtube.com/watch?v=vxt2AtqG0vs&list=PLgnwNu7JkhbjAYPhgYoDDZbZVG5K8bX0D
