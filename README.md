@@ -8,8 +8,10 @@ Docker Fundamentals
 	2. Containers are lightweight as it GuestOS is not required. So number of containers that can be run on a given hardware is much more than VM's.
 	3. Overhead in simulating underlying hardware is not required on docker.
 	4. Storage cost is reduced due to docker images.
+
+2. Build, Ship, Run
 	
- 
+	
 Installing Docker
 1. https://store.docker.com/editions/community/docker-ce-desktop-mac?tab=description
 
@@ -41,8 +43,17 @@ Containers With Network Connection
 5. To validate the port exposing - iptables -L -t nat
 
 
-
-
+WebApps With Docker
+1. Dockerfile
+2. docker-compose - Running Multi-Container App. build applications and stich them all together. It Takes yml file with information about services, about applications.
+	1. How to get multiple containers communicate with one another.
+	2. By Using container linking, environment variables, little config sugar.	
+3. docker machine - spin dev and test machines from command line. run machines with virtual box. eval $(docker-machine env MACHINE_NAME)
+4.  
 
 References:
 1. https://www.youtube.com/watch?v=UV3cw4QLJLs
+2. https://www.youtube.com/watch?v=OzfmRMNBwlE
+3. Best Practices for writing Dockerfiles - https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
+4. Diff between RUN vs CMD vs Entrypoint - http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+
